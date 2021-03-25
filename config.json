@@ -1,0 +1,10 @@
+{
+    "dfss": {
+        "studentId": "YOUR ID",
+        "password": "YOUR PASSWORD"
+    },
+    "baidu": {
+        "appId": "YOUR APPID",
+        "appSecret": "YOUR APPSECRET"
+    }
+}
