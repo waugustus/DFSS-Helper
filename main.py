@@ -12,9 +12,9 @@ from driver import Driver
 lesson_scope = {
     "001": 7,
     "002": 36,
-    "003": 36,
-    "004": 36,
-    "005": 36
+    "003": 21,
+    "004": 21,
+    "005": 21
 }
 
 time_scope = {
