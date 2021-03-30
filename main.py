@@ -57,6 +57,9 @@ if __name__ == '__main__':
     flag = 0
     schedule_date = ""
     lessonId = "000"
+    timeId = ""
+    schedule_date = ""
+    date = ""
 
     opts, args = getopt.getopt(sys.argv[2:], "wl:t:s:d:")
     for opt_name,opt_value in opts:
