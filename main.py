@@ -12,9 +12,9 @@ from driver import Driver
 lesson_scope = {
     "001": 7,
     "002": 36,
-    "003": 21,
-    "004": 21,
-    "005": 21
+    "041": 36,
+    "007": 36,
+    "008": 36
 }
 
 time_scope = {
@@ -43,9 +43,9 @@ if __name__ == '__main__':
                 -l 指定课程类型ID，ID对应关系如下：
                     001: 散段
                     002: 桩训
-                    003: 科三场内
-                    004: 综合训练
-                    005: 考前路训
+                    041: 科三场内
+                    007: 综合训练
+                    008: 考前路训
                 -t 课程时间ID，ID对应关系如下：
                     1: 8:00-12:00
                     2: 12:00-16:00
@@ -80,9 +80,9 @@ if __name__ == '__main__':
             [*] -l 指定课程类型ID，ID对应关系如下：
                     001: 散段
                     002: 桩训
-                    003: 科三场内
-                    004: 综合训练
-                    005: 考前路训
+                    041: 科三场内
+                    007: 综合训练
+                    008: 考前路训
         ''')
         exit(1)
     if timeId not in time_scope:
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 
     if sys.argv[1] == 'scan':
         driver.initSetting()
-        driver.scan(lessonId, start, end, lesson_scope[lessonId])
+        driver.scan(lessonId, lesson_scope[lessonId], start, end)
     elif sys.argv[1] == 'query':
         if schedule_date:
     
